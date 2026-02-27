@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Ultimate Weather</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">🌤</div>
+
+<h1>Ultimate Weather</h1>
+
+<p class="subtitle">Live Weather Forecast</p>
+
+<div>
+
+<span id="date"></span>
+<br>
+<span id="clock"></span>
+
+</div>
+
+<br>
+
+<button onclick="darkMode()">🌙 Dark Mode</button>
+
+<br><br>
+
+<input id="city" placeholder="Enter city">
+
+
+<div class="buttons">
+
+<button onclick="getWeather()">Search</button>
+
+<button onclick="getLocationWeather()">My Location</button>
+
+<button onclick="clearData()">Clear</button>
+
+</div>
+
+
+<div id="weatherResult">
+
+Enter a city to see weather
+
+</div>
+
+
+<div id="forecast"></div>
+
+
+<h3>Search History</h3>
+
+<div id="history"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
